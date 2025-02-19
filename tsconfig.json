@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "outDir": "./dist",
+      "declaration": true,    // Generate declaration files for TypeScript
+      "types": ["node", "jest"],  // Make sure Jest types are included
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+      "src/**/*.ts",   // Ensure your TypeScript files are included
+      "src/**/*.tsx"   // If you're using React, add .tsx files as well
+    ],
+    "exclude": ["node_modules"]
+  }
+  
