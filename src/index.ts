@@ -54,4 +54,10 @@ class SecureEncryptor {
   
 }
 
-export default SecureEncryptor;
+export default SecureEncryptor; // ES Modules
+
+// Ensure compatibility with CommonJS
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = SecureEncryptor;
+  module.exports.default = SecureEncryptor;
+}
